@@ -4,7 +4,7 @@ import { styles } from "./home.style.js";
 
 function Home(props){
 
-  function openPessenger(){
+  function openPassenger(){
     props.navigation.navigate("passenger")
   }
   
@@ -19,7 +19,7 @@ function Home(props){
 
     <Image source={icons.logo} style={styles.logo}></Image>
 
-    <TouchableOpacity style={styles.btn} onPress={openPessenger}>
+    <TouchableOpacity style={styles.btn} onPress={openPassenger}>
       <Image source={icons.passenger} style={styles.img} />
       <Text style={styles.title}>Passageiro</Text>
       <Text style={styles.text}>Encntre uma carona pra você</Text>

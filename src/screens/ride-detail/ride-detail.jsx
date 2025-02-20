@@ -1,11 +1,11 @@
 import { Text, View, TextInput } from "react-native";
-import { styles } from "./passenger.style.js";
+import { styles } from "./ride-detail.style.js";
 import MapView, { Marker, PROVIDER_DEFAULT} from'react-native-maps';
 import MyButton from "../../components/myButton/myButton";
 import { useState } from "react";
 import icons from "../../constants/icons.js";
 
-export default function Passenger(props) {
+export default function RideDetail(props) {
 
   const [myLocation, setMyLocation] = useState({
     latitude: 20,
@@ -50,14 +50,8 @@ export default function Passenger(props) {
         <Text>Destino</Text>
         <TextInput style={styles.input}></TextInput>
       </View>
-
-      <View style={styles.footerFileds}>
-        <Text>Motorista</Text>
-        <TextInput style={styles.input}></TextInput>
-      </View>
-
     </View>
 
-    <MyButton theme='red' text="Confirmar"></MyButton>
+    <MyButton text="Aceitar"></MyButton>
   </View>
 };

@@ -1,32 +1,34 @@
 export const styles={
-  bg:{
-    flex:1,
-    justifyContent: 'center',
-    alignItems: 'center',
+  container:{
+    flex: 1,
+    backgroundColor: "#fff"
+  },
+  
+  name:{
+    fontSize: 17,
+    fontWeight: 'bold',
   },
 
-  logo:{
-    width: 200,
-    height: 46,
-    margin:30
-  },
-
-  img:{
-    width: 160,
-    height: 160,
-  },
-
-  title:{
-    color: '#fff',
-    fontSize: 22,
-    fontWeight: 'bold'
-  },
-  text:{
-    color: '#fff',
+  address:{
     fontSize: 14,
+    color: "#8a8a8a"
   },
-  btn:{
-    alignItems: 'center',
-    margin:30,
+
+  imgcar:{
+    width: 20,
+    height: 20,
+    margin: 3
+  },
+
+  ride:{
+    padding: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: "#DFDFDF"
+
+  },
+
+  containerName:{
+    flexDirection: 'row',
   }
+
 }

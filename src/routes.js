@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./screens/home/home.jsx";
 import Passenger from "./screens/passenger/passenger.jsx";
 import Ride from "./screens/ride/ride.jsx";
-
+import RideDetail from "./screens/ride-detail/ride-detail.jsx";
 const Stack = createNativeStackNavigator();
 
 function Routes(){
@@ -33,9 +33,17 @@ function Routes(){
           name="ride" 
           component={Ride} 
           options={{
-            headerShownVisibility: false,
+            headerTitle: "Viagens Disponíveis",
+            headerTitleAlign: "center",
+          }}
+        />
+
+        <Stack.Screen 
+          name="rideDetail" 
+          component={RideDetail} 
+          options={{
             headerTitle: "",
-            headerTransparent: true
+            headerTransparent: true,
           }}
         />
         
