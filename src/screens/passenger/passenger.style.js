@@ -35,5 +35,11 @@ export const styles={
     marginBottom: 10,
     padding: 10,
     borderRadius: 5,
+  },
+
+  loading:{
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 }
